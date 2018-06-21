@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: zuul-gateway
+
+server:
+    port: 8072
+
+zuul:
+  # 禁止服务自动添加
+  ignoredServices: '*'
+  # 手动添加服务
+  routes:
+    # 需要映射的微服务地址
+    hello-service:
+      path: /helloClient/**
+      # 可忽略，服务器会自动发现
+      serviceId: hello-client
+      url: http://localhost:8071/
+      # 关键配置项
+      stripPrefix: false
+
+eureka:
+    instance:
+           preferIpAddress: true
+    client:
+           registerWithEureka: true
+           fetchRegistry: true
+           serviceUrl:
+              defaultZone: http://localhost:8070/eureka/
