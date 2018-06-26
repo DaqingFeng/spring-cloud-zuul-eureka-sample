@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-techprimers-eureka.iml" filepath="$PROJECT_DIR$/spring-techprimers-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/techprimers-admin/techprimers-admin.iml" filepath="$PROJECT_DIR$/techprimers-admin/techprimers-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/techprimers-client/techprimers-client.iml" filepath="$PROJECT_DIR$/techprimers-client/techprimers-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/techprimers-server/techprimers-server.iml" filepath="$PROJECT_DIR$/techprimers-server/techprimers-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/techprimers-service/techprimers-service.iml" filepath="$PROJECT_DIR$/techprimers-service/techprimers-service.iml" />
