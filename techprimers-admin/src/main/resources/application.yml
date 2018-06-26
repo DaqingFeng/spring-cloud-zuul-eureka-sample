@@ -1,24 +1,25 @@
 spring:
     application:
             name : spring-boot-admin-server
+    boot:
+          admin:
+             url: http://localhost:8073
+             username: ${security.user.name}
+             password: ${security.user.password}
+             #configs to give secured server info
+             client:
+               metadata:
+                 user.name: ${security.user.name}
+                 password: ${security.user.password}
+
+
+server:
+    port: 8073
 
 security:
       user:
        name: admin
        password: admin
-
-#configs to connect to self register the admin server as a client
-spring:
-     boot:
-      admin:
-         url: http://localhost:8073
-         username: ${security.user.name}
-         password: ${security.user.password}
-         #configs to give secured server info
-         client:
-           metadata:
-             user.name: ${security.user.name}
-             password: ${security.user.password}
 
 #mail notifications
 #spring.mail.host=smtp.gmail.com

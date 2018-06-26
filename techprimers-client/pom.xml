@@ -11,16 +11,17 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>techprimers-client</artifactId>
+	<name>techprimers-client</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>techprimers-client</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
 		<spring-cloud-starter-feign.version>1.2.3.RELEASE</spring-cloud-starter-feign.version>
+		<java.version>1.8</java.version>
+
 	</properties>
 
 	<dependencies>
@@ -34,11 +35,11 @@
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
 
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.cloud</groupId>-->
-			<!--<artifactId>spring-cloud-starter-feign</artifactId>-->
-			<!--<version>${spring-cloud-starter-feign.version}</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+			<version>${spring-cloud-starter-feign.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
