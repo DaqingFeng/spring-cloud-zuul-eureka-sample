@@ -10,19 +10,57 @@
 	</parent>
 
 	<artifactId>com.techprimers.admin</artifactId>
-	<name>techprimersadmin</name>
-	<description>Demo project for Spring Boot</description>
+	<name>techprimers-admin</name>
+	<description>Spring Boot Admin UI</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<spring-boot-admin-server.version>1.5.4</spring-boot-admin-server.version>
+		<spring-boot-admin-starter-client.version>1.5.4</spring-boot-admin-starter-client.version>
+        <hazelcast.version>3.9</hazelcast.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- dependencies used to enable admin server and UI -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server</artifactId>
+			<version>${spring-boot-admin-server.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui</artifactId>
+			<version>${spring-boot-admin-server.version}</version>
+		</dependency>
+
+		<!--Add login page and logout feature -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui-login</artifactId>
+			<version>${spring-boot-admin-server.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast</artifactId>
+			<version>${hazelcast.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>${spring-boot-admin-starter-client.version}</version>
 		</dependency>
 
 		<dependency>
@@ -40,6 +78,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
