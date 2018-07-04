@@ -1,4 +1,4 @@
-SBA 2.0.1   +  SB 2.0.1 + Spring cloud  
+Spring boot 2.x + Spring cloud + Spring boot admin  2.x 
 ===============================
 
 ## Components
