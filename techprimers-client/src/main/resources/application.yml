@@ -1,9 +1,39 @@
+server:
+  port: 8071
+
 spring:
   application:
     name: hello-client
 
-server:
-  port: 8071
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+spring:
+  profiles: insecure
+
+spring:
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  boot:
+    admin:
+      client:
+        url: http://localhost:8073
+        username: "admin"       #These two are needed so that the client
+        password: "admin"   #can register at the protected server api
+        instance:
+          metadata:
+            user.name:  ${spring.boot.admin.client.username}        #These two are needed so that the server
+            user.password: ${spring.boot.admin.client.password} #can access the protected client endpoints
+
 
 eureka:
   client:
@@ -11,13 +41,13 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
+      healthcheck:
+          enabled: true
   instance:
-    hostname: localhost
+      hostname: localhost
 
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+
+
+
+
+

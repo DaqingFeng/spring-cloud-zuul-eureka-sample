@@ -1,8 +1,10 @@
 package com.techprimers.cloud.client;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.techprimers.cloud.model.StudentResponse;
+import com.techprimers.cloud.model.StudentRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,21 +20,29 @@ import java.util.Arrays;
 class HelloClientController {
 
     @Autowired
+    @LoadBalanced
     private RestTemplate restTemplate;
+
+    @Autowired
+    HelloClientFeign helloClientFeign;
 
     @Autowired
     private LoadBalancerClient loadBalancer;
 
-    @HystrixCommand(fallbackMethod = "fallback", groupKey = "Hello", commandKey = "hello", threadPoolKey = "helloThread")
     @GetMapping(value = "/helloRestTemplate")
     public String helloRestTemplate() {
-        String url = "http://hello-server/helloServer";
+        String url = "http://HELLO-SERVER/helloServer";
         return restTemplate.getForObject(url, String.class);
+    }
+
+    @GetMapping(value = "/helloRestFeign")
+    public String helloRestFeign() {
+        return helloClientFeign.hello();
     }
 
     @GetMapping(value = "/helloLoadClient")
     public String helloLoadClient() {
-        ServiceInstance serviceInstance = loadBalancer.choose("hello-server");
+        ServiceInstance serviceInstance = loadBalancer.choose("HELLO-SERVER");
         String baseUri = String.format("%s/helloServer", serviceInstance.getUri());
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(baseUri)
                 .queryParam("name", "balance");
@@ -44,7 +54,8 @@ class HelloClientController {
         return response.getBody();
     }
 
-    public String fallback(Throwable hystrixCommand) {
-        return "Fall Back Hello world";
+    @GetMapping(value = "/GetStudentInfo")
+    public StudentResponse GetStudentInfo(StudentRequest req) {
+        return helloClientFeign.GetStudentInfo(req.getName(), req.getJobTitle());
     }
 }

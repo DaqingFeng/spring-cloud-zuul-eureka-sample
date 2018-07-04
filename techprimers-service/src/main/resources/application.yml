@@ -1,9 +1,9 @@
+server:
+   port: 8070
+
 spring:
      application:
       name: eureka-service
-
-server:
-   port: 8070
 
 eureka:
   client:
@@ -12,4 +12,11 @@ eureka:
     server:
       waitTimeInMsWhenSyncEmpty: 0
     service-url:
-          defaultZone: http://localhost:8070/eureka
+          defaultZone:  http://${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+        hostname: "localhost"
+
+logging:
+  level:
+    org.hibernate.SQL: INFO
+    com.netflix.eureka: 'OFF'

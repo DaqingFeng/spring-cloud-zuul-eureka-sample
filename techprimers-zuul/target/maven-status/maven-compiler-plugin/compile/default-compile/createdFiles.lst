@@ -1,0 +1,6 @@
+com\techprimers\zuul\filter\PostFilter.class
+com\techprimers\zuul\filter\ErrorFilter.class
+com\techprimers\zuul\filter\PreFilter.class
+com\techprimers\zuul\filter\RouteFilter.class
+com\techprimers\zuul\config\FilterConfig.class
+com\techprimers\zuul\ZuulApplication.class

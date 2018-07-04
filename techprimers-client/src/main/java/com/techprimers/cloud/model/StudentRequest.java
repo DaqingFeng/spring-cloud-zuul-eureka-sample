@@ -1,0 +1,26 @@
+package com.techprimers.cloud.model;
+
+/**
+ * Created by fengdaqing on 2018/7/4.
+ */
+public class StudentRequest {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    private String jobTitle;
+}

@@ -1,25 +1,28 @@
-spring:
-    application:
-            name : spring-boot-admin-server
-    boot:
-          admin:
-             url: http://localhost:8073
-             username: ${security.user.name}
-             password: ${security.user.password}
-             #configs to give secured server info
-             client:
-               metadata:
-                 user.name: ${security.user.name}
-                 password: ${security.user.password}
-
-
 server:
-    port: 8073
+   port: 8073 #can access the protected client endpoints
 
-security:
-      user:
-       name: admin
-       password: admin
+spring:
+   application:
+    name: spring-boot-admin-server
+   boot:
+    admin:
+      client:
+        url: http://localhost:8073
+        instance:
+          service-base-url: http://localhost:8073
+          metadata:
+               user.name: ${spring.security.user.name}
+               user.password: ${spring.security.user.password}
+        password: "admin"
+        username:  "admin"
+   profiles:
+     active: secure
+
+   security:
+    user:
+      name: "admin"
+      password: "admin"
+
 
 #mail notifications
 #spring.mail.host=smtp.gmail.com
