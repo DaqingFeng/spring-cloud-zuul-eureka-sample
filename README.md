@@ -21,7 +21,6 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
 
 
 ## Screenshots 
-
  *Project Strucure*
 ![Screenshot application list](/picture/projectStructure.png)
  
@@ -35,7 +34,6 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
  
 *eureka service*
  ![Screenshot application list](/picture/eureka.png)
-
 
  
 ## Run project 
