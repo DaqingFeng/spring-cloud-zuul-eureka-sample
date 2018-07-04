@@ -24,6 +24,7 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
 
 
  *Project Strucure*
+ 
 ![Screenshot application list](/picture/projectStructure.png)
  
  
