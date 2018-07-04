@@ -10,11 +10,11 @@
 #Reference tutorial spring boot admin 2.x  document  'http://codecentric.github.io/spring-boot-admin/2.0.1/
 
 
--  MicroServcie working princple 
+1  MicroServcie working princple 
 <img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg">
 
 
--  Project Strucure
+2  Project Strucure
 <img  src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/projectStructure.png" />
 
 
@@ -22,12 +22,12 @@
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/metric.png" >
 
 
--  eureka service 
+3  eureka service 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
  
  
--  zuul proxy   The Service which is going to get data from Eureka Service  Discovery (`techprimers-client`)
+4  zuul proxy
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
 
 
