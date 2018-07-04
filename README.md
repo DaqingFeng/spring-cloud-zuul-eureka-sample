@@ -7,8 +7,7 @@
 - `techprimers-client` - The Service which is going to get data from Server via the Discovery Service from the Service Registry (`techprimers-service`).
 - `techprimers-zuul` - The Service which is going to get data from Eureka Service  Discovery (`techprimers-client`).  
 
-
-reference tutorial  <href src='http://codecentric.github.io/spring-boot-admin/2.0.1/'>
+Reference tutorial spring boot admin 2.x  document  'http://codecentric.github.io/spring-boot-admin/2.0.1/'
 
 
 -MicroServcie working princple 
