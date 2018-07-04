@@ -14,18 +14,27 @@
 <img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg">
 
 
+
+
 2  Project Strucure
 <img  src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/projectStructure.png" />
+
+
 
 
 3 Spring boot admin 2.x 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/metric.png" >
 
 
+
+
+
  
  
 4  zuul proxy
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
+
+
 
 
 
