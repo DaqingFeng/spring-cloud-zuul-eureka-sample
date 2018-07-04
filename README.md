@@ -8,6 +8,9 @@
 - `techprimers-zuul` - The Service which is going to get data from Eureka Service  Discovery (`techprimers-client`).  
 
 
+reference tutorial  <href src='http://codecentric.github.io/spring-boot-admin/2.0.1/'>
+
+
 -MicroServcie working princple 
 <img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg">
 
