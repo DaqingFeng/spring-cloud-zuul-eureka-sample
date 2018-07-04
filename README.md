@@ -18,12 +18,9 @@
 <img  src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/projectStructure.png" />
 
 
--  Spring boot admin 2.x 
+3 Spring boot admin 2.x 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/metric.png" >
 
-
-3  eureka service 
-<img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
  
  
@@ -31,4 +28,7 @@
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
 
 
+
+5  eureka service 
+<img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
