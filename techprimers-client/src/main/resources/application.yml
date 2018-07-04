@@ -3,7 +3,14 @@ server:
 
 spring:
   application:
-    name: hello-client
+     name: hello-client
+  profiles:
+    active: insecure
+  boot:
+    admin:
+      client:
+        instance:
+          name: ${spring.application.name}
 
 
 management:
@@ -14,9 +21,6 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-
-spring:
-  profiles: insecure
 
 spring:
   security:
@@ -45,7 +49,7 @@ eureka:
           enabled: true
   instance:
       hostname: localhost
-
+      appname:  hello-client
 
 
 

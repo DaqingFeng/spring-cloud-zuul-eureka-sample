@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="techprimers-admin" />
+        <module name="com.techprimers.admin" />
         <module name="techprimers-client" />
         <module name="techprimers-server" />
         <module name="techprimers-service" />
@@ -14,8 +14,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="com.techprimers.admin" target="1.8" />
       <module name="spring-techprimers-eureka" target="1.8" />
-      <module name="techprimers-admin" target="1.8" />
       <module name="techprimers-client" target="1.8" />
       <module name="techprimers-server" target="1.8" />
       <module name="techprimers-service" target="1.8" />
