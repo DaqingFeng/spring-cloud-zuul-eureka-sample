@@ -16,7 +16,7 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
 
 
 
-*MicroServcie working princple *
+* MicroServcie working princple *
 ![Screenshot application list](/picture/Java-microservices.jpg)
 
 
@@ -26,14 +26,14 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
 ![Screenshot application list](/picture/projectStructure.png)
  
  
-*Spring boot admin 2.x *
+*Spring boot admin 2.x*
 ![Screenshot application list](/picture/metric.png)
 
- * zuul proxy*
+ *zuul proxy*
  ![Screenshot application list](/picture/zuulproxy.png)
 
  
-* eureka service *
+*eureka service*
  ![Screenshot application list](/picture/eureka.png)
 
 
