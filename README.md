@@ -25,8 +25,10 @@
 -  eureka service 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
-
--  zuul proxy
+ 
+ 
+-  zuul proxy   The Service which is going to get data from Eureka Service  Discovery (`techprimers-client`)
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
+
 
 
