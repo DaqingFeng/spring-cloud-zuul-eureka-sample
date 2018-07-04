@@ -17,7 +17,6 @@
 
 
 - Spring boot admin 2.x 
-<img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/spring%20boot%20start.png" >
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/metric.png" >
 
 
