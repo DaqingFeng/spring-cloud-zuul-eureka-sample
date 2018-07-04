@@ -10,23 +10,23 @@
 #Reference tutorial spring boot admin 2.x  document  'http://codecentric.github.io/spring-boot-admin/2.0.1/
 
 
-# MicroServcie working princple 
+-  MicroServcie working princple 
 <img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg">
 
 
-#Project Strucure
+-  Project Strucure
 <img  src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/projectStructure.png" />
 
 
-#Spring boot admin 2.x 
+-  Spring boot admin 2.x 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-cloud-zuul-eureka-sample/master/picture/metric.png" >
 
 
-#eureka service 
+-  eureka service 
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
 
-# zuul proxy
+-  zuul proxy
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
 
 
