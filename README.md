@@ -11,7 +11,7 @@
 
 
 1  MicroServcie working princple 
-<img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg">
+<img src="https://github.com/DaqingFeng/spring-colud-zuul-eureka-sample/blob/master/picture/Java-microservices.jpg"/>
 
 
 
