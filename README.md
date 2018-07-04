@@ -26,9 +26,5 @@ Reference tutorial spring boot admin 2.x  document  'http://codecentric.github.i
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eureka.png" />
 
 
-- eureka client 
-<img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/eurekaclient.png" />
-
-
 - zuul proxy
 <img  src="https://raw.githubusercontent.com/DaqingFeng/spring-colud-zuul-eureka-sample/master/picture/zuulproxy.png" />
