@@ -1,5 +1,5 @@
 server:
-   port: 8073 #can access the protected client endpoints
+   port: 8074 #can access the protected client endpoints
 
 spring:
    application:

@@ -3,7 +3,7 @@ spring:
     name: zuul-gateway
 
 server:
-    port: 8072
+    port: 8073
 
 zuul:
   # 禁止服务自动添加
