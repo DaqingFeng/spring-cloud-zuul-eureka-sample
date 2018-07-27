@@ -38,11 +38,15 @@ Spring boot 2.x + Spring cloud + Spring boot admin  2.x
 *eureka service*
  ![Screenshot application list](/picture/eureka.png)
 
+
+ *Swagger Api hepler*
+ ![Screenshot application list](/picture/swagger.png)
  
+
 ## Run project 
 
--  Start Spring cloud service (Eureka) ---- techprimers-service
-- Start cloud server  ---techprimers-server
-- Start Spring boot admin  ---techprimers-admin
--  Start Spring eureka client  ---techprimers-client
--  Start Zuul proxy  ---techprimers-zuul
+- 1 Start Spring cloud service (Eureka) ---- techprimers-service
+- 2 Start cloud server  ---techprimers-server
+- 3 Start Spring boot admin  ---techprimers-admin
+- 4 Start Spring eureka client  ---techprimers-client
+- 5 Start Zuul proxy  ---techprimers-zuul
