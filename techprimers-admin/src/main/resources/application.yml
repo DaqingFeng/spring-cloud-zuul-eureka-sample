@@ -23,7 +23,6 @@ spring:
       name: "admin"
       password: "admin"
 
-
 #mail notifications
 #spring.mail.host=smtp.gmail.com
 #spring.mail.username=test@gmail.com

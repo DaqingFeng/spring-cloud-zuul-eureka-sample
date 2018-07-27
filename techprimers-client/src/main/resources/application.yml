@@ -12,7 +12,6 @@ spring:
         instance:
           name: ${spring.application.name}
 
-
 management:
   endpoints:
     web:
@@ -30,7 +29,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8073
+        url: http://localhost:8074
         username: "admin"       #These two are needed so that the client
         password: "admin"   #can register at the protected server api
         instance:
